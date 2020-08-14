@@ -1,0 +1,19 @@
+{
+  "name": "parse-env-to-json",
+  "version": "1.0.0",
+  "description": "Parse a .env file to json to be used as an object",
+  "main": "main.js",
+  "keywords": [
+    "json",
+    "env",
+    "env-to-json",
+    "parse",
+    "convert"
+  ],
+  "author": "Augusto Barco <augustopayza@gmail.com> (https://github.com/AugSync)",
+  "license": "MIT License",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
+  "homepage": "https://github.com/AugSync/parse-env-to-json#readme"
+}
