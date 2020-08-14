@@ -1,6 +1,7 @@
 const path = require('path');
 const parseEnvFileToJson = require('../index.ts');
 const { extractLines, isKeysIncluded, extractOnlyValue } = require('../index.ts');
+const parseEnvFileToJsonBuilded = require('../../dist/main');
 
 const { test, expect } = global;
 
@@ -46,6 +47,24 @@ test('Read and parse env file', () => {
   expect.assertions(1);
 
   return parseEnvFileToJson(path.join(__dirname, '../', '/__tests__/.env.test'), [
+    'API_URL',
+    'API_TOKEN',
+    'DB_NAME',
+    'DB_PASSWORD',
+  ]).then((data) => expect(data).toMatchObject(envJson));
+});
+
+test('Read and parse env file with build', () => {
+  const envJson = {
+    apiUrl: 'www.api.com',
+    apiToken: 'token',
+    dbName: 'db-example',
+    dbPassword: 'password',
+  };
+
+  expect.assertions(1);
+
+  return parseEnvFileToJsonBuilded(path.join(__dirname, '../', '/__tests__/.env.test'), [
     'API_URL',
     'API_TOKEN',
     'DB_NAME',

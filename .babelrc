@@ -1,7 +1,4 @@
 {
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-typescript",
-    "babel-preset-airbnb"
-  ]
+  "presets": ["@babel/preset-env", "@babel/preset-typescript", "babel-preset-airbnb"],
+  "sourceType": "unambiguous"
 }

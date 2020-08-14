@@ -23,7 +23,7 @@ DB_PASSWORD="password"
 ```js
 const parseEnvToJson = require('parse-env-to-json');
 
-const envFilePath = "./.env"
+const envFilePath = './.env';
 
 async function readEnvFile() {
   const envKeysExtracted = await parseEnvToJson(envFilePath, [
@@ -39,10 +39,10 @@ async function readEnvFile() {
   *   apiToken: 'token',
   *   dbName: 'db-example',
   *   dbPassword: 'password',
-  */ }
+    }*/
 
-  return envKeysExtracted
+  return envKeysExtracted;
 }
 
-envFilePath()
+envFilePath();
 ```

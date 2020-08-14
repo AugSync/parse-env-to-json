@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --watch --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "test": "jest --watchAll"
+    "test": "npm run build && jest"
   },
   "keywords": [
     "json",
@@ -34,6 +34,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.4.0",
     "prettier": "^2.0.5",
+    "ts-loader": "^8.0.2",
     "typescript": "^3.9.7",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",

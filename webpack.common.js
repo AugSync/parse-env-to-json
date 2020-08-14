@@ -3,6 +3,7 @@ const path = require('path');
 
 module.exports = {
   entry: './src/index.ts',
+  target: 'node',
   module: {
     rules: [
       {
@@ -26,8 +27,6 @@ module.exports = {
   output: {
     filename: 'build.js',
     path: path.resolve(__dirname, 'dist/build'),
-  },
-  node: {
-    fs: 'empty',
+    libraryTarget: 'commonjs2',
   },
 };

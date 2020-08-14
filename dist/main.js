@@ -1,3 +1,3 @@
-const parseEnvFileToJson = require('./build');
+const parseEnvFileToJson = require('./build/build');
 
 module.exports = parseEnvFileToJson;
