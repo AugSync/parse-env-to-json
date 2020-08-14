@@ -12,8 +12,5 @@
   ],
   "author": "Augusto Barco <augustopayza@gmail.com> (https://github.com/AugSync)",
   "license": "MIT License",
-  "dependencies": {
-    "lodash": "^4.17.20"
-  },
   "homepage": "https://github.com/AugSync/parse-env-to-json#readme"
 }
