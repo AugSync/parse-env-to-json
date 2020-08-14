@@ -30,11 +30,4 @@ module.exports = {
   node: {
     fs: 'empty',
   },
-  externals: {
-    lodash: {
-      commonjs: 'lodash',
-      amd: 'lodash',
-      root: '_', // indicates global variable
-    },
-  },
 };
