@@ -44,5 +44,5 @@ async function readEnvFile() {
   return envKeysExtracted;
 }
 
-envFilePath();
+readEnvFile();
 ```

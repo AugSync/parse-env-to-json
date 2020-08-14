@@ -1,6 +1,6 @@
 {
   "name": "parse-env-to-json",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Parse a .env file to json to be used as an object",
   "main": "./build/main.js",
   "scripts": {
